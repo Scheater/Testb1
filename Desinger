@@ -1,0 +1,124 @@
+namespace ShieldLauncherDesign
+{
+    partial class Form1
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        private System.Windows.Forms.PictureBox logoBox;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.CheckBox chkRemember;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.Panel yellowDot;
+        private System.Windows.Forms.Panel redDot;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null)) components.Dispose();
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.logoBox = new System.Windows.Forms.PictureBox();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.chkRemember = new System.Windows.Forms.CheckBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
+            this.yellowDot = new System.Windows.Forms.Panel();
+            this.redDot = new System.Windows.Forms.Panel();
+
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).BeginInit();
+            this.SuspendLayout();
+
+            // logoBox
+            this.logoBox.Image = Image.FromFile("shield-logo.png");
+            this.logoBox.Location = new System.Drawing.Point(40, 60);
+            this.logoBox.Size = new System.Drawing.Size(120, 120);
+            this.logoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+
+            // lblTitle
+            this.lblTitle.Text = "SHIELD LAUNCHER";
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 22F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(180, 90);
+            this.lblTitle.AutoSize = true;
+
+            // txtUsername
+            this.txtUsername.PlaceholderText = "Username";
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(45, 40, 60);
+            this.txtUsername.ForeColor = System.Drawing.Color.White;
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUsername.Location = new System.Drawing.Point(180, 150);
+            this.txtUsername.Size = new System.Drawing.Size(320, 30);
+
+            // txtPassword
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(45, 40, 60);
+            this.txtPassword.ForeColor = System.Drawing.Color.White;
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.Location = new System.Drawing.Point(180, 190);
+            this.txtPassword.Size = new System.Drawing.Size(320, 30);
+
+            // chkRemember
+            this.chkRemember.Text = "Remember me";
+            this.chkRemember.ForeColor = System.Drawing.Color.White;
+            this.chkRemember.Location = new System.Drawing.Point(180, 230);
+            this.chkRemember.AutoSize = true;
+
+            // btnLogin
+            this.btnLogin.Text = "Login";
+            this.btnLogin.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Location = new System.Drawing.Point(180, 270);
+            this.btnLogin.Size = new System.Drawing.Size(150, 40);
+
+            // btnRegister
+            this.btnRegister.Text = "Register";
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(45, 40, 60);
+            this.btnRegister.ForeColor = System.Drawing.Color.White;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Location = new System.Drawing.Point(350, 270);
+            this.btnRegister.Size = new System.Drawing.Size(150, 40);
+
+            // yellowDot
+            this.yellowDot.BackColor = System.Drawing.Color.Gold;
+            this.yellowDot.Location = new System.Drawing.Point(Width - 50, 15);
+            this.yellowDot.Size = new System.Drawing.Size(12, 12);
+
+            // redDot
+            this.redDot.BackColor = System.Drawing.Color.Red;
+            this.redDot.Location = new System.Drawing.Point(Width - 30, 15);
+            this.redDot.Size = new System.Drawing.Size(12, 12);
+
+            // Form1
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(25, 20, 40);
+            this.ClientSize = new System.Drawing.Size(800, 400);
+            this.Controls.Add(this.logoBox);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.chkRemember);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnRegister);
+            this.Controls.Add(this.yellowDot);
+            this.Controls.Add(this.redDot);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.Text = "Shield Launcher";
+
+            ((System.ComponentModel.ISupportInitialize)(this.logoBox)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+    }
+}
